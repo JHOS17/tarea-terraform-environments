@@ -27,10 +27,10 @@ Este proyecto implementa la infraestructura como código (IaC) para desplegar do
 
 ## 🚀 Instrucciones de Despliegue
 
-1. **Clonar el repositorio o situarse en la carpeta del proyecto:**
+1. **Ubicarse en la carpeta del proyecto:**
    ```bash
    cd tarea-terraform-environments
-   Inicializar los proveedores de Terraform:
+
 ## 2. Instalación y despliegue
 
 **Inicializar los proveedores de Terraform:**
@@ -75,3 +75,11 @@ feat: Adición de nuevos recursos de infraestructura.
 fix: Corrección de errores en la configuración de contenedores.
 
 docs: Documentación del proyecto.
+
+**Destrucción de la infraestructura**
+
+Para eliminar los recursos creados por Terraform y detener los contenedores:
+
+terraform destroy
+
+Confirma la operación cuando Terraform lo solicite. Para ejecutarla sin confirmación, utiliza terraform destroy -auto-approve.
