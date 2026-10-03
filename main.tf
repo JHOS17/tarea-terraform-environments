@@ -51,6 +51,10 @@ resource "docker_container" "bd_dev" {
 resource "docker_container" "api_dev" {
   name  = "api-dev"
   image = docker_image.node.image_id
+  
+  # Mantiene el contenedor Node.js en ejecución constante
+  command = ["tail", "-f", "/dev/null"]
+
   networks_advanced {
     name = docker_network.dev_network.name
   }
@@ -92,6 +96,10 @@ resource "docker_container" "bd_qa" {
 resource "docker_container" "api_qa" {
   name  = "api-qa"
   image = docker_image.node.image_id
+  
+  # Mantiene el contenedor Node.js en ejecución constante
+  command = ["tail", "-f", "/dev/null"]
+
   networks_advanced {
     name = docker_network.qa_network.name
   }
