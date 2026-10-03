@@ -1,4 +1,4 @@
-Set-Content -Path main.tf -Value 'terraform {
+﻿terraform {
   required_providers {
     docker = {
       source  = "kreuzwerker/docker"
@@ -111,4 +111,4 @@ resource "docker_container" "web_qa" {
     internal = 80
     external = 5001
   }
-}'
+}
