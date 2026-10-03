@@ -4,7 +4,7 @@ Este proyecto implementa la infraestructura como código (IaC) para desplegar do
 
 ---
 
-## 🛠️ Arquitectura de los Entornos
+## Arquitectura de los Entornos
 
 | Entorno | Servicio | Imagen | Puerto Host | Puerto Contenedor | Red Docker |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -17,7 +17,7 @@ Este proyecto implementa la infraestructura como código (IaC) para desplegar do
 
 ---
 
-## 📋 Requisitos Previos
+## Requisitos Previos
 
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/) en ejecución.
 * [Terraform](https://developer.hashicorp.com/terraform/downloads) v1.0+ instalado.
@@ -25,7 +25,7 @@ Este proyecto implementa la infraestructura como código (IaC) para desplegar do
 
 ---
 
-## 🚀 Instrucciones de Despliegue
+## Instrucciones de Despliegue
 
 1. **Ubicarse en la carpeta del proyecto:**
    ```bash
